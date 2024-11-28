@@ -63,6 +63,8 @@ class Inference:
         return torch.exp(_o/temp)/(torch.exp(_o/temp).sum(-1)+1e-5)
     
 
+<<<<<<< HEAD
+=======
     
 if __name__ == '__main__':
     model_path = "out/model.pt"#model的路径
@@ -70,3 +72,4 @@ if __name__ == '__main__':
     env=Inference()
     voc = env("我爱天安门")
     print(voc)
+>>>>>>> 34dbad5c20e3af3ed25fa18d14e1e61f8dd02707
